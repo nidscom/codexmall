@@ -11,12 +11,36 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-body {
-	font-family: 'Open Sans' sans-serif;
-	font-weight: 300;
-	line-height: 1.42em;
-	color:#A7A1AE;
-	background-color:#1F2739;
+body{background-color:#fff;}
+.card-header, .card-link,.card-link:hover{background-color:#555;text-align:center;color:hotpink;}
+.card-body{padding:10px 10px;}
+.card{width:500px;}
+.card-link:after {
+   content: "x";
+   position:relative;
+   float:left;
+   margin-top:-8px;
+   margin-left:5px;
+   font-size:20px;
+   font-weight:600;
+   color:#fff;
+ -webkit-animation: minus 0.8s;
+   animation: minus 0.8s;
+}
+.card-link.collapsed:after {
+   content: ">";
+  -webkit-animation: plus 0.8s;
+   animation: plus 0.8s;
+} 
+
+@keyframes minus {
+    0% {transform: rotate(360deg);}
+    0% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes plus {
+   0% {transform: rotate(-360deg);}
+   0% {-webkit-transform: rotate(-360deg);}
 }
 
 h1 {
