@@ -6,7 +6,19 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script> window.intergramId = "197322791" </script>
+	<script> 
+    	window.intergramId = "197322791";
+    	window.intergramCustomizations = {
+        titleClosed: 'Closed Chat',
+        titleOpen: 'BUY NOW',
+        introMessage: 'Greetings! Welcome to my store. How would i serve you?',
+        autoResponse: 'Thank You',
+        autoNoResponse: 'Excuse us, we are away for awhile. Be right back soon. ' +
+                        'Feel free to ask question, we will answer you shortly',
+        mainColor: "#E91E63", // Can be any css supported color 'red', 'rgb(255,87,34)', etc
+        alwaysUseFloatingButton: false // Use the mobile floating button also on large screens
+   	 };
+	</script>
 	<script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>	
 	<link rel="stylesheet" href="index.css">
 </head>
