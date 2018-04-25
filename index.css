@@ -50,3 +50,21 @@ body{background-color:#fff;}
    0% {transform: rotate(-360deg);}
    0% {-webkit-transform: rotate(-360deg);}
 }
+
+h1 {
+	font-size:3em;
+	font-weight: 300;
+	line-height:1em;
+	text-align: center;
+	color: #4DC3FA;
+}
+
+h2 {
+	font-size:1em;
+	font-weight: 300;
+	text-align: center;
+	display: block;
+	line-height:1em;
+	padding-bottom: 2em;
+	color: #FB667A;
+}
