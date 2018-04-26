@@ -13,6 +13,7 @@
 
 * {box-sizing: border-box;}
 
+@media screen and (max-width: 1200px) {
 .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -27,7 +28,8 @@
     padding-right: 50;
     border-radius: 10px;
 }	
-	
+
+@media screen and (max-width: 1200px) {
 a {
     color: #007bff;
     text-decoration: none;
@@ -36,6 +38,31 @@ a {
     padding-left: 50;
 }
 
+@media screen and (max-width: 500px) {
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 495px;
+    margin-left: 30;
+    margin-right: 30;
+    background-color: black;
+    padding-left: 50;
+    padding-right: 50;
+    border-radius: 10px;
+}		
+	
+@media screen and (max-width: 500px) {	
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 20;
+    padding-left: 30;
+}
+	
 body { 
   margin: 0;
   font-family: Arial;
