@@ -125,8 +125,6 @@ h2 {
 	color: #FB667A;
 }
 
-element.style {
-}
 .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -142,8 +140,6 @@ element.style {
     border-radius: 10px;
 }	
 	
-element.style {
-}
 a {
     color: #007bff;
     text-decoration: blink;
