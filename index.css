@@ -59,9 +59,9 @@ body {
 
 @media screen and (max-width: 500px) {
   .header a {
-    float: none;
+    float: center;
     display: block;
-    text-align: left;
+    text-align: center;
   }
   .header-right {
     float: none;
@@ -76,7 +76,7 @@ background-color:#1F2739;
 }
 
 body{background-color:white;}
-.card-header, .card-link,.card-link:hover{background-color:#555;text-align:center;color:slategrey;}
+.card-header, .card-link,.card-link:hover{background-color:white;text-align:center;color:black;}
 .card-body{padding:10px 10px;}
 .card{width:100%;}
 .card-link:after {
