@@ -19,9 +19,12 @@ body {
 }
 
 .header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+    overflow: hidden;
+    background-color: white;
+    padding: 30px 20px;
+    max-width: 95%;
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 .header a {
@@ -120,4 +123,10 @@ h2 {
 	line-height:1em;
 	padding-bottom: 2em;
 	color: #FB667A;
+}
+
+	@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
 }
