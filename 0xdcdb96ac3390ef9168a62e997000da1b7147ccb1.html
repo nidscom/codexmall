@@ -48,28 +48,30 @@
 
 <!-- Seller's Menu -->
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Mobile Prepaid
+  <a class="btn btn-primary" data-toggle="collapse" href="#mobileprepaid" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Mobile Prepaid	<!-- 1st Product Category -->
   </a>
-  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-target
+  <button class="btn btn-primary" type="button" data-toggle="collapse" href="#utilitybills" aria-expanded="false" aria-controls="collapseExample">
+    Utility Bills	<!-- 2nd Product Category and so on to add more category to seller's menu -->
   </button>
 </p>
-<div class="collapse" id="collapseExample">
+<!-- 1st Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
+<div class="collapse" id="mobileprepaid">
   <div class="card card-body">
-
-<!-- Product Start Here -->
+<!-- List Product from 1st Category Below-->
 <div class="container">
      <div id="accordion">
-
       <div class="card">
         <div class="card-header">
 	<a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#menuone">
+<!-- Product Image Thumbnail & Name-->
 	<img class="img-fluid" src="https://www.nidscom.io/wp-content/uploads/2017/07/umobile.png" alt="Umobile" width="70" height="70">
 		Umobile Prepaid</a>
         </div>
-        <div id="menuone" class="collapse show">
+        <div id="menuone" class="collapse.show">
           <div class="card-body">
+		  	<!-- Copy until this line for new category page. Paste end of page before </body> tag and add 2 /div -->		  
+<!-- Product Details with Price -->		  
 <table class="table table-dark table-striped table-hover">
     <thead>
       <tr>
@@ -142,7 +144,7 @@
        </div>
       </div>
 
-<br> 
+<br> <!-- 2nd Product from 1st category starts here -->
 
       <div class="card">
         <div class="card-header">
@@ -294,9 +296,33 @@
 
    </div>
 </div>
+<!-- Product Ends Here -->	  
  </div>
 </div>
-	
-	
+<!-- 1st Category Ends Here -->	
+
+<!-- 2nd Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
+<div class="collapse" id="utilitybills">
+  <div class="card card-body">
+	<!-- List Product from 1st Category Below-->
+<div class="container">
+     <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+	<a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#menuone2">
+<!-- Product Image Thumbnail & Name-->
+	<img class="img-fluid" src="https://www.nidscom.io/wp-content/uploads/2017/07/umobile.png" alt="Umobile" width="70" height="70">
+		Pay Bills with ©IPHS. Coming Soon.</a>
+        </div>
+        <div id="menuone2" class="collapse.show">
+          <div class="card-body">
+		  	<!-- Copy until this line for new category page. Paste end of page before </body> tag and add 2 /div -->	
+		</div>
+	      </div>
+		
+</div>
+</div>
+<!-- 2nd category ends here -->
+	      
 </body>
 </html>
