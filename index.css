@@ -11,8 +11,6 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-* {box-sizing: border-box;}
-
 @media screen and (max-width: 1200px) {
 .col {
     -ms-flex-preferred-size: 0;
@@ -38,23 +36,23 @@ a {
     padding-left: 50;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
 .col {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    max-width: 495px;
-    margin-left: 30;
-    margin-right: 30;
+    max-width: 440px;
+    margin-left: 10;
+    margin-right: 10;
     background-color: black;
     padding-left: 50;
     padding-right: 50;
     border-radius: 10px;
 }		
 	
-@media screen and (max-width: 500px) {	
+@media screen and (max-width: 450px) {	
 a {
     color: #007bff;
     text-decoration: none;
@@ -62,6 +60,8 @@ a {
     font-size: 20;
     padding-left: 30;
 }
+
+* {box-sizing: border-box;}
 	
 body { 
   margin: 0;
