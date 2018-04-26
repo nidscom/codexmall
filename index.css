@@ -141,4 +141,15 @@ element.style {
     padding-right: 60;
     border-radius: 10px;
 }	
+	
+element.style {
+}
+a {
+    color: #007bff;
+    text-decoration: blink;
+    background-color: #fdfdfd00;
+    font-size: 20;
+    padding-left: 70;
+    padding-right: 70;	
+}
 }
