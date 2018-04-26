@@ -48,16 +48,16 @@
 
 <!-- Seller's Menu -->
 <p>
-  <a class="btn btn-primary" data-toggle="collapse" href="#mobileprepaid" role="button" aria-expanded="false" aria-controls="mobileprepaid">
+  <a class="btn btn-primary" id="category1" data-toggle="collapse" href="#mobileprepaid" role="button" aria-expanded="false" aria-controls="mobileprepaid">
     Mobile Prepaid	<!-- 1st Product Category -->
   </a>
-  <button class="btn btn-primary" data-toggle="collapse" href="#utilitybills" role="button" aria-expanded="false" aria-controls="utilitybills">
+  <button class="btn btn-primary" id="category2" data-toggle="collapse" href="#utilitybills" role="button" aria-expanded="false" aria-controls="utilitybills">
     Utility Bills	<!-- 2nd Product Category and so on to add more category to seller's menu -->
   </button>
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="mobileprepaid utilitybills">Reset</button>	
+<button class="btn btn-sucess" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="mobileprepaid utilitybills">Reset</button>	
 </p>
 <!-- 1st Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
-<div class="collapse.show" id="mobileprepaid">
+<div class="collapse.show" id="mobileprepaid" data-parent="category1">
   <div class="card card-body">
 <!-- List Product from 1st Category Below-->
 <div class="container">
@@ -303,7 +303,7 @@
 <!-- 1st Category Ends Here -->	
 
 <!-- 2nd Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
-<div class="collapse" id="utilitybills">
+<div class="collapse" id="utilitybills" data-parent="category1">
   <div class="card card-body">
 	<!-- List Product from 1st Category Below-->
 <div class="container">
