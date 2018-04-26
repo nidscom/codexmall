@@ -43,7 +43,7 @@ a {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    max-width: 440px;
+    max-width: 430px;
     margin-left: 10;
     margin-right: 10;
     background-color: black;
@@ -58,7 +58,8 @@ a {
     text-decoration: none;
     background-color: transparent;
     font-size: 20;
-    padding-left: 30;
+    padding-left: 10;
+    max-width: 420px
 }
 
 * {box-sizing: border-box;}
