@@ -76,7 +76,7 @@ background-color:#1F2739;
 }
 
 body{background-color:white;}
-.card-header, .card-link,.card-link:hover{background-color:white;text-align:center;color:black;}
+.card-header,.card-link,.card-link:hover{background-color:white;text-align:center;color:black;}
 .card-body{padding:10px 10px;}
 .card{width:100%;}
 .card-link:after {
