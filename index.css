@@ -125,8 +125,27 @@ h2 {
 	color: #FB667A;
 }
 
-	@media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .container{
         max-width: 970px;
     }
+html, body, .container-fluid, .row {
+  height: 100%;
 }
+.sidebar {
+  background-color: #CCCCCC;
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #CCCCCC;
+  }
+}
+
+	
