@@ -75,10 +75,10 @@ color:#A7A1AE;
 background-color:#1F2739;
 }
 
-body{background-color:#fff;}
+body{background-color:white;}
 .card-header, .card-link,.card-link:hover{background-color:#555;text-align:center;color:slategrey;}
 .card-body{padding:10px 10px;}
-.card{width:800px;}
+.card{width:100%;}
 .card-link:after {
    content: "x";
    position:relative;
@@ -87,7 +87,7 @@ body{background-color:#fff;}
    margin-left:5px;
    font-size:20px;
    font-weight:600;
-   color:#fff;
+   color:white;
  -webkit-animation: minus 0.8s;
    animation: minus 0.8s;
 }
