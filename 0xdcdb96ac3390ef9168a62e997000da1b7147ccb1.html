@@ -31,34 +31,45 @@
 	<a href="#default" class="logo">>/CodexMobileShop</a>
 	<p style="color:green;margin-top: 49px;margin-left: 15;">Open Source Community Estore</p>
   <div class="header-right">
-    <a class="active" href="#home">Home</a>
-    <a href="#contact">Guide</a>
-    <a href="#about">About</a>
+    	<a class="active" href="#home">Home</a>
+    	<a href="#contact">Guide</a>
+    	<a href="#about">About</a>
   </div>
 </div>
 	
 <div class="container">
 <div class="row align-items-center justify-content-center">
-  <div class="col">
-	<p align="center">Seller - Naga<br/>
-		<a href="https://etherscan.io/0xdcdb96ac3390ef9168a62e997000da1b7147ccb1.html">0xdcdb96ac3390ef9168a62e997000da1b7147ccb1</a><br/>
-		Buy Price: RM0.03/1©IPHS</p>
+<div class="col">
+	
 </div>
 </div>
+</div>	
 <!-- Seller's Menu -->
 
-<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-  <a class="nav-link active" id="v-pills-prepaid-tab" data-toggle="pill" href="#v-pills-prepaid" role="tab" aria-controls="v-pills-prepaid" aria-selected="true">Prepaid</a>
-  <a class="nav-link" id="v-pills-utilbills-tab" data-toggle="pill" href="#v-pills-utilbills" role="tab" aria-controls="v-pills-utilbills" aria-selected="false">Utility Bills</a>
-  <a class="nav-link" id="v-pills-gadgets-tab" data-toggle="pill" href="#v-pills-gadgets" role="tab" aria-controls="v-pills-gadgets" aria-selected="false">Gadgets</a>
-  <a class="nav-link" id="v-pills-howtobuy-tab" data-toggle="pill" href="#v-pills-howtobuy" role="tab" aria-controls="v-pills-howtobuy" aria-selected="false">How to Buy</a>
-</div>
-<div class="tab-content" id="v-pills-tabContent">
-  <div class="tab-pane fade show active" id="v-pills-prepaid" role="tabpanel" aria-labelledby="v-pills-prepaid-tab">
-<!-- List Product from 1st Category Below-->
-<div class="collapse" id="mobileprepaid" data-parent="v-pills-prepaid">
+<div class="container">
+  <h2>Dynamic Pills</h2>
+  <p>To make the tabs toggleable, add the data-toggle="pill" attribute to each link. Then add a .tab-pane class with a unique ID for every tab and wrap them inside a div element with class .tab-content.</p>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+    <li><a data-toggle="pill" href="#menu1">Prepaid</a></li>
+    <li><a data-toggle="pill" href="#menu2">Utility Bills</a></li>
+    <li><a data-toggle="pill" href="#menu3">Gadgets</a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Seller - Naga</h3>
+      <p align="center"><br/>
+	<a href="https://etherscan.io/0xdcdb96ac3390ef9168a62e997000da1b7147ccb1.html">0xdcdb96ac3390ef9168a62e997000da1b7147ccb1</a><br/>
+	     <b>Buy Price: RM0.03/1©IPHS</b></p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Mobile Prepaid</h3>
+      <p><!-- 1st Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
+<div class="collapse" id="mobileprepaid" data-parent="category1">
   <div class="card card-body">
-   <div class="container">
+<!-- List Product from 1st Category Below-->
+<div class="container">
      <div id="accordion">
       <div class="card">
         <div class="card-header">
@@ -68,8 +79,10 @@
 		Umobile Prepaid</a>
         </div>
         <div id="menuone" class="collapse">
-	<div class="card-body">  <!-- product content -->
-	<table class="table table-dark table-striped table-hover">
+          <div class="card-body">
+		  	<!-- Copy until this line for new category page. Paste end of page before </body> tag and add 2 /div -->		  
+<!-- Product Details with Price -->		  
+<table class="table table-dark table-striped table-hover">
     <thead>
       <tr>
         <th>Product Code</th>
@@ -413,10 +426,21 @@
         <td>RM98.90</td>
       </tr> 	    
     </tbody>
-  </table> </div></div>
-  <div class="tab-pane fade" id="v-pills-utilbills" role="tabpanel" aria-labelledby="v-pills-utilbills-tab">...</div>
-  <div class="tab-pane fade" id="v-pills-gadgets" role="tabpanel" aria-labelledby="v-pills-gadgets-tab">...</div>
-  <div class="tab-pane fade" id="v-pills-howtobuy" role="tabpanel" aria-labelledby="v-pills-howtobuy-tab">...</div>
+  </table> 
+</div>		  
+</div>
+</div>
+<!-- 5th Product Ends Here --></p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
 </div>	
 	      
 </body>
