@@ -45,33 +45,16 @@
 		Buy Price: RM0.03/1©IPHS</p>
 </div>
 </div>
-
 <!-- Seller's Menu -->
-<p>
-  <button class="btn btn-success" id="category1" data-toggle="collapse" href="#mobileprepaid" role="button" aria-expanded="false" aria-controls="mobileprepaid">
-    Mobile Prepaid	<!-- 1st Product Category -->
-  </button>
-  <button class="btn btn-success" id="category2" data-toggle="collapse" href="#utilitybills" role="button" aria-expanded="false" aria-controls="utilitybills">
-    Utility Bills	<!-- 2nd Product Category and so on to add more category to seller's menu -->
-  </button>
-</p>
-<!-- 1st Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
-<div class="collapse" id="mobileprepaid" data-parent="category1">
-  <div class="card card-body">
-<!-- List Product from 1st Category Below-->
-<div class="container">
-     <div id="accordion">
-      <div class="card">
-        <div class="card-header">
-	<a class="card-link" data-toggle="collapse" data-parent="#accordion" href="#menuone">
-<!-- Product Image Thumbnail & Name-->
-	<img class="img-fluid" src="https://www.nidscom.io/wp-content/uploads/2017/07/umobile.png" alt="Umobile" width="70" height="70">
-		Umobile Prepaid</a>
-        </div>
-        <div id="menuone" class="collapse">
-          <div class="card-body">
-		  	<!-- Copy until this line for new category page. Paste end of page before </body> tag and add 2 /div -->		  
-<!-- Product Details with Price -->		  
+
+<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+  <a class="nav-link active" id="v-pills-prepaid-tab" data-toggle="pill" href="#v-pills-prepaid" role="tab" aria-controls="v-pills-prepaid" aria-selected="true">Prepaid</a>
+  <a class="nav-link" id="v-pills-utilbills-tab" data-toggle="pill" href="#v-pills-utilbills" role="tab" aria-controls="v-pills-utilbills" aria-selected="false">Utility Bills</a>
+  <a class="nav-link" id="v-pills-gadgets-tab" data-toggle="pill" href="#v-pills-gadgets" role="tab" aria-controls="v-pills-gadgets" aria-selected="false">Gadgets</a>
+  <a class="nav-link" id="v-pills-howtobuy-tab" data-toggle="pill" href="#v-pills-howtobuy" role="tab" aria-controls="v-pills-howtobuy" aria-selected="false">How to Buy</a>
+</div>
+<div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-prepaid" role="tabpanel" aria-labelledby="v-pills-prepaid-tab">
 <table class="table table-dark table-striped table-hover">
     <thead>
       <tr>
@@ -416,37 +399,11 @@
         <td>RM98.90</td>
       </tr> 	    
     </tbody>
-  </table> 
-</div>		  
-</div>
-</div>
-<!-- 5th Product Ends Here -->
-	</div>
-	  </div>
-<!-- 2nd Category Product Start Here --> <!-- Copy starts here to link with new category page button -->
-<div class="collapse" id="utilitybills" data-parent="category2">
-  <div class="card card-body">
-	<!-- List Product from 1st Category Below-->
-<div class="container">
-     <div id="accordion2">
-      <div class="card">
-        <div class="card-header">
-	<a class="card-link" data-toggle="collapse" data-parent="#accordion2" href="#menuone2">
-<!-- Product Image Thumbnail & Name-->
-	<img class="img-fluid" src="https://www.nidscom.io/former-tenant-unsettled-utilities-bill/" alt="Pay Bills" width="70" height="70">
-	Coming Soon.</a>
-        </div>
-        <div id="menuone2" class="collapse">
-          <div class="card-body">
-	  	<!-- Copy until this line for new category page. Paste end of page before </body> tag and add 2 /div -->	
-		</div>
-	      </div>
-	     </div>
-	</div>
-	</div>
-	</div>
-	</div>
-<!-- 2nd category ends here -->
+  </table> </div>
+  <div class="tab-pane fade" id="v-pills-utilbills" role="tabpanel" aria-labelledby="v-pills-utilbills-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-gadgets" role="tabpanel" aria-labelledby="v-pills-gadgets-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-howtobuy" role="tabpanel" aria-labelledby="v-pills-howtobuy-tab">...</div>
+</div>	
 	      
 </body>
 </html>
