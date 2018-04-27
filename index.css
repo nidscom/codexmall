@@ -1,5 +1,5 @@
 /*	
-	As for CodexMall
+	As for Lokali©
 	===================
 	License:
 	Public GNU
@@ -11,117 +11,189 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
-* {box-sizing: border-box;}
-	
-body { 
-  margin: 0;
-  font-family: Arial;
-}
-
-.header {
+#sidebar {
     overflow: hidden;
-    background-color: white;
-    padding: 30px 20px;
-    max-width: 95%;
-    margin-left: 30px;
-    margin-top: 15px;
+    z-index: 3;
+}
+#sidebar .list-group {
+    min-width: 400px;
+    background-color: #333;
+    min-height: 100vh;
+}
+#sidebar i {
+    margin-right: 6px;
 }
 
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
+#sidebar .list-group-item {
+    border-radius: 0;
+    background-color: #333;
+    color: #ccc;
+    border-left: 0;
+    border-right: 0;
+    border-color: #2c2c2c;
+    white-space: nowrap;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+/* highlight active menu */
+#sidebar .list-group-item:not(.collapsed) {
+    background-color: #222;
 }
 
-.header a:hover {
-  background-color: #ddd;
-  color: black;
+/* closed state */
+#sidebar .list-group .list-group-item[aria-expanded="false"]::after {
+  content: " \f0d7";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
 }
 
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
+/* open state */
+#sidebar .list-group .list-group-item[aria-expanded="true"] {
+  background-color: #222;
+}
+#sidebar .list-group .list-group-item[aria-expanded="true"]::after {
+  content: " \f0da";
+  font-family: FontAwesome;
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
 }
 
-.header-right {
-  float: right;
+/* level 1*/
+#sidebar .list-group .collapse .list-group-item,
+#sidebar .list-group .collapsing .list-group-item  {
+  padding-left: 20px;
 }
 
-@media screen and (max-width: 500px) {
-  .header a {
-    float: center;
+/* level 2*/
+#sidebar .list-group .collapse > .collapse .list-group-item,
+#sidebar .list-group .collapse > .collapsing .list-group-item {
+  padding-left: 30px;
+}
+
+/* level 3*/
+#sidebar .list-group .collapse > .collapse > .collapse .list-group-item {
+  padding-left: 40px;
+}
+
+@media (max-width:768px) {
+    #sidebar {
+        min-width: 35px;
+        max-width: 40px;
+        overflow-y: auto;
+        overflow-x: visible;
+        transition: all 0.25s ease;
+        transform: translateX(-45px);
+        position: fixed;
+    }
+    
+    #sidebar.show {
+        transform: translateX(0);
+    }
+
+    #sidebar::-webkit-scrollbar{ width: 0px; }
+    
+    #sidebar, #sidebar .list-group {
+        min-width: 35px;
+        overflow: visible;
+    }
+    /* overlay sub levels on small screens */
+    #sidebar .list-group .collapse.show, #sidebar .list-group .collapsing {
+        position: relative;
+        z-index: 1;
+        width: 190px;
+        top: 0;
+    }
+    #sidebar .list-group > .list-group-item {
+        text-align: center;
+        padding: .75rem .5rem;
+    }
+    /* hide caret icons of top level when collapsed */
+    #sidebar .list-group > .list-group-item[aria-expanded="true"]::after,
+    #sidebar .list-group > .list-group-item[aria-expanded="false"]::after {
+        display:none;
+    }
+}
+
+.collapse.show {
+  visibility: visible;
+}
+.collapsing {
+  visibility: visible;
+  height: 0;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.collapsing.width {
+  -webkit-transition-property: width, visibility;
+  transition-property: width, visibility;
+  width: 0;
+  height: 100%;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#sidebar .logo {
+    padding: 15px 0px;
+    margin: 0;
     display: block;
-    text-align: center;
-  }
-  .header-right {
-    float: none;
-  }	
-	
-body {
-font-family: 'Open Sans' sans-serif;
-font-weight: 300;
-line-height: 1.42em;
-color:#A7A1AE;
-background-color:#1F2739;
+    position: relative;
+    z-index: 4;
+    background-color: #333;
 }
 
-body{background-color:white;}
-.card-header,.card-link,.card-link:hover{background-color:white;text-align:center;color:black;}
-.card-body{padding:10px 10px;}
-.card{width:100%;}
-.card-link:after {
-   content: "x";
-   position:relative;
-   float:left;
-   margin-top:-8px;
-   margin-left:5px;
-   font-size:20px;
-   font-weight:600;
-   color:white;
- -webkit-animation: minus 0.8s;
-   animation: minus 0.8s;
-}
-.card-link.collapsed:after {
-   content: ">";
-  -webkit-animation: plus 0.8s;
-   animation: plus 0.8s;
-} 
-
-@keyframes minus {
-    0% {transform: rotate(360deg);}
-    0% {-webkit-transform: rotate(360deg);}
+#sidebar .logo .logo-text{
+  text-transform: uppercase;
+  padding: 5px 0px;
+  display: block;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 400;
+  line-height: 30px;
+  overflow: hidden;
 }
 
-@keyframes plus {
-   0% {transform: rotate(-360deg);}
-   0% {-webkit-transform: rotate(-360deg);}
+#sidebar .logo-img{
+  width: 42px;
+  max-height: 42px;
 }
-		
-h1 {
-	font-size:3em;
-	font-weight: 300;
-	line-height:1em;
-	text-align: center;
-	color: #4DC3FA;
+#sidebar .logo-img img{
+  width: 25px;
+  top: 24px;
+  left: 9px;
+  position: absolute;
 }
 
-h2 {
-	font-size:1em;
-	font-weight: 300;
-	text-align: center;
-	display: block;
-	line-height:1em;
-	padding-bottom: 2em;
-	color: #FB667A;
+.visible-sidebar {
+  display: inline-block !important;
 }
+
+.visible-sidebar-hidden {
+  display: none !important;
+}
+
+#sidebar-toggle.collapsed .visible-sidebar {
+  display: none !important;
+}
+
+#sidebar-toggle.collapsed .visible-sidebar-hidden {
+    display: inline-block !important;
+}
+
+.navbar .navbar-toggle {
+    float: left;
+    padding: 3px 15px 0 15px;
+}
+
+.navbar .navbar-header {
+       padding: 7px;
+       margin-top: 4px;
+    width: 40px;
+    height: 40px;
+    display: block !important;
 }
