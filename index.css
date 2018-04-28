@@ -26,3 +26,9 @@ body {
     text-align: left;
     background-color: #b3f3d0;	
 }
+
+a {
+    color: #565c60;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
