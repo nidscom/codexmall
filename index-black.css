@@ -22,13 +22,13 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: #fff;
     text-align: left;
     background-color: #0c0c0c;	
 }
 
 a {
-    color: #565c60;
+    color: #fff;
     text-decoration: none;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
